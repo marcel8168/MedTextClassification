@@ -14,7 +14,8 @@ def plot(data_list: list, data_label_list: list[str], title, ylabel, xlabel, vli
         plt.ylim(ylim)
     if len(data_list) > 1 or len(vlines) > 0:
         plt.legend()
+    model_name = model_name[model_name.find('/')+1:] if model_name else ""
     plt.savefig(
-        f"{title}_{model_name[model_name.find('/')+1:]}.pdf", format="pdf", bbox_inches="tight")
+        f"{title}_{model_name}.pdf", format="pdf", bbox_inches="tight")
     plt.show()
     plt.close()

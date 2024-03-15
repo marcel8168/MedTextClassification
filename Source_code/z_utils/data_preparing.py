@@ -1,8 +1,8 @@
 import pandas as pd
-from datasets import Dataset
 from torch.utils.data import DataLoader
 from sklearn.model_selection import train_test_split
 
+from .dataset import Dataset
 from .global_constants import RANDOM_SEED
 
 
