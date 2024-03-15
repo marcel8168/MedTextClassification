@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  query:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/data
