@@ -1,2 +1,5 @@
 *.egg-info
 *.venv
+/kaggle.json
+*.pyc
+*-checkpoint.ipynb
