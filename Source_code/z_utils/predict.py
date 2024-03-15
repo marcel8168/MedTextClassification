@@ -5,10 +5,11 @@ import datetime
 import torch.nn.functional as F
 
 
-def predict(model, texts, tokenizer, device, max_len=512):
+def predict(model, texts, tokenizer, device="cpu", max_len=512):
     time0 = time.monotonic_ns()
 
     predictions = []
+    label_list = []
 
     for data in texts:
         text = str(data)
@@ -32,10 +33,20 @@ def predict(model, texts, tokenizer, device, max_len=512):
         with torch.no_grad():
             logits = model(ids, mask, token_type_ids)
 
-        probabilities = torch.sigmoid(logits.squeeze())
+        if device == "cpu":
+            probabilities = F.softmax(
+                logits.squeeze(), -1).cpu().detach().numpy()
+        else:
+            probabilities = F.softmax(logits.squeeze(), -1)
+
         predictions.append(probabilities)
+
+        if device == "cpu":
+            label_list.append(data["labels"].cpu().detach().numpy())
+        else:
+            label_list.append(data["labels"])
 
         elapsed_time = datetime.timedelta(
             microseconds=(time.monotonic_ns() - time0)/1000)
 
-    return predictions, elapsed_time
+    return predictions, label_list, elapsed_time
