@@ -8,7 +8,16 @@ from .global_constants import LABELS_MAP
 
 
 def xml_to_df(xml_file_paths: list[str], preprocess_numbers=False):
+    """
+    Converts XML files to pandas DataFrames.
 
+    Args:
+        xml_file_paths (list): List of paths to XML files.
+        preprocess_numbers (bool): Whether to preprocess numbers in text (default: False).
+
+    Returns:
+        tuple: A tuple containing two pandas DataFrames, one for human medical texts and one for veterinary medical texts.
+    """
     data_sets = [[], []]
     record_sets = []
 
@@ -51,6 +60,18 @@ def xml_to_df(xml_file_paths: list[str], preprocess_numbers=False):
 
 
 def preprocess_text(text, lower_case=True, special_chars=True, numbers=False):
+    """
+    Preprocesses the input text.
+
+    Args:
+        text (str): The input text to preprocess.
+        lower_case (bool): Whether to convert text to lowercase (default: True).
+        special_chars (bool): Whether to remove special characters (default: True).
+        numbers (bool): Whether to remove numbers (default: False).
+
+    Returns:
+        str: Preprocessed text.
+    """
     text_after_case_processing = text.lower() if lower_case else text
 
     if special_chars:

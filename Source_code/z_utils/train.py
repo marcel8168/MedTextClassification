@@ -11,6 +11,28 @@ from .global_constants import PATH_SAVED_MODELS, RANDOM_SEED, EVAL_FREQUENCY
 
 
 def train_model(model, train_dataloader, val_dataloader, batch_size, loss_fn, optimizer, device, scheduler, epochs):
+    """
+    Trains the specified model on the training data and evaluates it on the validation data for a certain number of epochs.
+
+    Args:
+        model (torch.nn.Module): The neural network model to be trained.
+        train_dataloader (torch.utils.data.DataLoader): DataLoader for the training dataset.
+        val_dataloader (torch.utils.data.DataLoader): DataLoader for the validation dataset.
+        batch_size (int): Batch size for training.
+        loss_fn (torch.nn.Module): The loss function used for training.
+        optimizer (torch.optim.Optimizer): The optimizer used for training.
+        device (torch.device): The device (CPU or GPU) to run the model and tensors.
+        scheduler (torch.optim.lr_scheduler._LRScheduler): Learning rate scheduler.
+        epochs (int): Number of epochs for training.
+
+    Returns:
+        tuple: A tuple containing the following elements:
+            - metrics (list): List of dictionaries containing training and validation metrics.
+            - losses (list): List of dictionaries containing training losses.
+            - sliding_accuracies (list): List of dictionaries containing sliding accuracies.
+            - info_best_model (str): Information about the best performing model.
+            - run_times (list): List of strings representing the run times for each epoch.
+    """
     metrics = []
     losses = []
     sliding_accuracies = []

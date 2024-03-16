@@ -2,8 +2,28 @@ import torch
 
 
 class Dataset(torch.utils.data.Dataset):
+    """
+    Custom dataset class for handling text data.
+
+    Args:
+        texts (list): List of input texts.
+        labels (list): List of corresponding labels.
+        tokenizer (transformers.PreTrainedTokenizer): Tokenizer for encoding text inputs.
+        device (str): Device to place tensors on ('cpu' or 'cuda').
+        max_len (int): Maximum length of input sequences after tokenization (default: 512).
+    """
 
     def __init__(self, texts, labels, tokenizer, device, max_len=512):
+        """
+        Initialize the dataset.
+
+        Args:
+            texts (list): List of input texts.
+            labels (list): List of corresponding labels.
+            tokenizer (transformers.PreTrainedTokenizer): Tokenizer for encoding text inputs.
+            device (str): Device to place tensors on ('cpu' or 'cuda').
+            max_len (int): Maximum length of input sequences after tokenization (default: 512).
+        """
         self.texts = texts
         self.labels = labels
         self.tokenizer = tokenizer
@@ -11,9 +31,24 @@ class Dataset(torch.utils.data.Dataset):
         self.max_len = max_len
 
     def __len__(self):
+        """
+        Return the length of the dataset.
+
+        Returns:
+            int: Number of samples in the dataset.
+        """
         return len(self.texts)
 
     def __getitem__(self, idx):
+        """
+        Get an item from the dataset by index.
+
+        Args:
+            idx (int): Index of the item to retrieve.
+
+        Returns:
+            dict: Dictionary containing the encoded text input and corresponding label.
+        """
         if torch.is_tensor(idx):
             idx = idx.tolist()
 

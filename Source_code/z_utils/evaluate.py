@@ -2,6 +2,19 @@ import torch
 
 
 def eval_model(model, dataloader, batch_size, loss_fn, device):
+    """
+    Evaluate the model on the validation or test dataset.
+
+    Args:
+        model (torch.nn.Module): The trained model.
+        dataloader (torch.utils.data.DataLoader): DataLoader for the validation or test dataset.
+        batch_size (int): Batch size used during training.
+        loss_fn: Loss function used for training.
+        device (str): Device to run the evaluation on ('cpu' or 'cuda').
+
+    Returns:
+        tuple: A tuple containing the accuracy and average loss.
+    """
     model = model.eval()
 
     loss = 0.0
