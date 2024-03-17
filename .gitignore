@@ -3,3 +3,6 @@
 /kaggle.json
 *.pyc
 *-checkpoint.ipynb
+*.pt
+*.pkl
+datasets/
