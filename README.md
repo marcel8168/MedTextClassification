@@ -4,7 +4,7 @@ Source code of the Master's Thesis in Computer Science at the Friedrich-Alexande
 
 Author: Marcel Hiltner
 
-Note: Due to the memory size, all trained or fine-tuned models and the data set are stored on Kaggle. However, these can be loaded via the Kaggle API, as implemented in the code.
+Note: Due to the memory size, all trained or fine-tuned models and the data set are stored on kaggle. However, these can be loaded via the kaggle API, as implemented in the code.
 
 ## Table of contents
 
@@ -83,7 +83,7 @@ git clone https://github.com/marcel8168/medtextclassification medtextclassificat
 cd medtextclassification
 pip install .
 ```
-3. To be able to load datasets and models used in this repository first set username and api-key from kaggle (see [How to get API key](https://github.com/Kaggle/kaggle-api?tab=readme-ov-file#api-credentials))
+3. To be able to load datasets and models used in this repository first set username and API key from kaggle (see [How to get API key](https://github.com/Kaggle/kaggle-api?tab=readme-ov-file#api-credentials))
 ```shell
 # linux
 export KAGGLE_USERNAME=xxxxxxxxxxxxxx
