@@ -3,38 +3,14 @@
 Source code of the Master's Thesis in Computer Science at the Friedrich-Alexander-University (FAU). 
 Author: Marcel Hiltner
 
+Note: Due to the memory size, all trained or fine-tuned models and the data set are stored on Kaggle. However, these can be loaded via the Kaggle API, as implemented in the code.
+
 ## Table of contents
 
 * [Repository Structure](#repository-structure)
 * [Installation](#installation)
+* [Links to models and dataset](#further-links)
 * [License](#license)
-
-## Installation
-Note: All results of the master thesis were obtained in Kaggle Notebooks. Local execution of the code may lead to deviating results.
-To install, follow the steps below:
-
-1. Clone the repository:
-```shell
-git clone https://github.com/marcel8168/medtextclassification medtextclassification
-```
-2. Install the requirements
-```shell
-cd medtextclassification
-pip install .
-```
-3. To be able to load datasets and models used in this repository first set username and api-key from kaggle (can be created in kaggle profile settings)
-```shell
-# linux
-export KAGGLE_USERNAME=xxxxxxxxxxxxxx
-export KAGGLE_KEY=xxxxxxxxxxxxxx
-
-# windows
-SET KAGGLE_USERNAME=xxxxxxxxxxxxxx
-SET KAGGLE_KEY=xxxxxxxxxxxxxx
-```
-4. Optional: For querying PubMed first copy your API key from PubMed (see [How to get API key](https://support.nlm.nih.gov/knowledgebase/article/KA-05317/en-us)) into api_key.txt
-
-
 
 ## Repository Structure
 <pre>
@@ -92,6 +68,42 @@ SET KAGGLE_KEY=xxxxxxxxxxxxxx
 ├── requirements.txt                        | Requirements file
 └── setup.py                                | Setup file
 </pre>
+
+## Installation
+Note: All results of the master thesis were obtained in Kaggle Notebooks. Local execution of the code may lead to deviating results.
+To install, follow the steps below:
+
+1. Clone the repository:
+```shell
+git clone https://github.com/marcel8168/medtextclassification medtextclassification
+```
+2. Install the requirements
+```shell
+cd medtextclassification
+pip install .
+```
+3. To be able to load datasets and models used in this repository first set username and api-key from kaggle (see [How to get API key](https://github.com/Kaggle/kaggle-api?tab=readme-ov-file#api-credentials))
+```shell
+# linux
+export KAGGLE_USERNAME=xxxxxxxxxxxxxx
+export KAGGLE_KEY=xxxxxxxxxxxxxx
+
+# windows
+SET KAGGLE_USERNAME=xxxxxxxxxxxxxx
+SET KAGGLE_KEY=xxxxxxxxxxxxxx
+```
+4. Optional: For querying PubMed first copy your API key from PubMed (see [How to get API key](https://support.nlm.nih.gov/knowledgebase/article/KA-05317/en-us)) into api_key.txt
+
+## Further links
+| Description |  Link  |
+|:-----|:--------:|
+| BERT Model   | [Link](https://www.kaggle.com/models/marcelhiltner/bert-base-uncased-pubmed) |
+| RoBERTa Model   | [Link](https://www.kaggle.com/models/marcelhiltner/roberta-base-pubmed)  |   
+| DeBERTa Model   | [Link](https://www.kaggle.com/models/marcelhiltner/deberta-base-pubmed) | 
+| BlueBERT Model | [Link](https://www.kaggle.com/models/marcelhiltner/bluebert-large-pubmed) |
+| XLNet Model | [Link](https://www.kaggle.com/models/marcelhiltner/xlnet-large-pubmed) |
+| SVM Model | [Link](https://www.kaggle.com/models/marcelhiltner/svm-linear-pubmed) |
+| Dataset | [Link](https://www.kaggle.com/datasets/marcelhiltner/pubmed-human-veterinary-medicine-classification) |
 
 ## License
 [MIT License](LICENSE) (Marcel Hiltner, 2023)
