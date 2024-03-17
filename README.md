@@ -1,6 +1,7 @@
 # Classification of veterinary subjects in medical literature and clinical summaries
 
-Source code of the Master's Thesis in Computer Science at the Friedrich-Alexander-University (FAU). 
+Source code of the Master's Thesis in Computer Science at the Friedrich-Alexander-University (FAU).
+
 Author: Marcel Hiltner
 
 Note: Due to the memory size, all trained or fine-tuned models and the data set are stored on Kaggle. However, these can be loaded via the Kaggle API, as implemented in the code.
