@@ -6,3 +6,4 @@
 *.pt
 *.pkl
 datasets/
+models/
