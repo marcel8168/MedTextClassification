@@ -7,9 +7,9 @@ Author: Marcel Hiltner
 
 * [Repository Structure](#repository-structure)
 * [Installation](#installation)
-* [License](#licence)
+* [License](#license)
 
-## Installation and Execution
+## Installation
 Note: All results of the master thesis were obtained in Kaggle Notebooks. Local execution of the code may lead to deviating results.
 To install, follow the steps below:
 
