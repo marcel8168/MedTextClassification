@@ -78,9 +78,14 @@ To install, follow the steps below:
 ```shell
 git clone https://github.com/marcel8168/medtextclassification medtextclassification
 ```
-2. Install the requirements
+2. Create a virtual environment
 ```shell
 cd medtextclassification
+python -m venv venv
+venv\Scripts\activate.bat
+```
+2. Install the requirements
+```shell
 pip install -e .
 pip install -r requirements.txt
 ```
