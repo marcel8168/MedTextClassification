@@ -53,7 +53,7 @@ from xml.etree.ElementTree import fromstring, ElementTree
 JOURNAL = "Can Vet J"
 JOURNAL_ISSN = "0008-5286"
 
-TARGET_DIRECTORY = "../data/"
+TARGET_DIRECTORY = "./data_received/"
 OUTPUT_FILE = "CanVetJ_data.xml"
 
 
