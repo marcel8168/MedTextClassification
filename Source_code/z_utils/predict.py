@@ -46,7 +46,7 @@ def predict(model, dataloader=None, texts=None, device="cpu", max_len=512):
             logits.squeeze(), -1).cpu().detach().numpy()
 
         predictions.append(probabilities)
-        if dataloader and "labels" in data.columns:
+        if dataloader and "labels" in data.keys():
             label_list.append(data["labels"].cpu().detach().numpy())
 
     return predictions, label_list
