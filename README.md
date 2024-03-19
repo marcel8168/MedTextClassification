@@ -81,7 +81,8 @@ git clone https://github.com/marcel8168/medtextclassification medtextclassificat
 2. Install the requirements
 ```shell
 cd medtextclassification
-pip install .
+pip install -e .
+pip install -r requirements.txt
 ```
 3. To be able to load datasets and models used in this repository first set username and API key from kaggle (see [How to get API key](https://github.com/Kaggle/kaggle-api?tab=readme-ov-file#api-credentials))
 ```shell
