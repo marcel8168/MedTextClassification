@@ -7,3 +7,7 @@
 *.pkl
 datasets/
 models/
+.ipynb_checkpoints
+__pycache__/
+corpus/
+build/
