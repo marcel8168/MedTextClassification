@@ -84,12 +84,13 @@ cd medtextclassification
 python -m venv venv
 venv\Scripts\activate.bat
 ```
-3. Install the requirements
+3. Install PyTorch for computations on CUDA (see [How to install PyTorch](https://pytorch.org/)). Select CUDA as compute platform.
+4. Install the requirements
 ```shell
 pip install -e .
 pip install -r requirements.txt
 ```
-4. To be able to load datasets and models used in this repository first set username and API key from kaggle (see [How to get API key](https://github.com/Kaggle/kaggle-api?tab=readme-ov-file#api-credentials))
+5. To be able to load datasets and models used in this repository first set username and API key from kaggle (see [How to get API key](https://github.com/Kaggle/kaggle-api?tab=readme-ov-file#api-credentials))
 ```shell
 # linux
 export KAGGLE_USERNAME=xxxxxxxxxxxxxx
@@ -99,7 +100,7 @@ export KAGGLE_KEY=xxxxxxxxxxxxxx
 SET KAGGLE_USERNAME=xxxxxxxxxxxxxx
 SET KAGGLE_KEY=xxxxxxxxxxxxxx
 ```
-5. Optional: For querying PubMed first copy your API key from PubMed (see [How to get API key](https://support.nlm.nih.gov/knowledgebase/article/KA-05317/en-us)) into api_key.txt
+6. Optional: For querying PubMed first copy your API key from PubMed (see [How to get API key](https://support.nlm.nih.gov/knowledgebase/article/KA-05317/en-us)) into api_key.txt
 
 ## Further links
 | Description |  Link  |

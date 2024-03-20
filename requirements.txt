@@ -1,7 +1,3 @@
---extra-index-url https://download.pytorch.org/whl/cu121
-torch
-torchvision
-torchaudio
 datasets==2.18.0
 entrezpy==2.1.3
 joblib==1.2.0
