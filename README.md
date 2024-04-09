@@ -24,7 +24,7 @@ Note: Due to the storage space, all trained or fine-tuned models and the data se
         │   ├── human_medical_data          | Folder for human medical data
         │   │   ├── BMJ_data.xml            | XML file for for texts of journal BMJ
         │   │   └── NEJM_data.xml           | XML file for for texts of journal NEJM
-        │   └── veterinary_medical_data     | Folder for veterinary medical data
+        │   └── veterinary_medical_data     | Folder for veterinary data
         │       ├── Animals_data.xml        | XML file for texts of journal Animals
         │       └── ...                     | Other XML files for veterinary journal texts
         ├── pubmed_queries                  | Folder for PubMed queries
@@ -43,7 +43,7 @@ Note: Due to the storage space, all trained or fine-tuned models and the data se
     ├── <b>d_model_testing</b>                     | <b>Folder for model testing</b>
         ├── plm_testing.ipynb               | Notebook for PLM testing
         └── svm_testing.ipynb               | Notebook for SVM testing
-    ├── <b>e_model_interpretation</b>              | <b>Folder for model interpretation</b>
+    ├── <b>e_model_explanation</b>              | <b>Folder for model explanation</b>
         ├── rare_animals.ipynb              | Notebook for analysis of texts containing rare animals
         ├── svm_coefficients.ipynb          | Notebook for SVM coefficients analysis
         └── word_importance.ipynb           | Notebook for word importance analysis
