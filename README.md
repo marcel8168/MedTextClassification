@@ -43,7 +43,7 @@ Note: Due to the storage space, all trained or fine-tuned models and the dataset
     ├── <b>d_model_testing</b>                     | <b>Folder for model testing</b>
         ├── plm_testing.ipynb               | Notebook for PLM testing
         └── svm_testing.ipynb               | Notebook for SVM testing
-    ├── <b>e_model_explanation</b>              | <b>Folder for model explanation</b>
+    ├── <b>e_model_explanation</b>                 | <b>Folder for model explanation</b>
         ├── rare_animals.ipynb              | Notebook for analysis of texts containing rare animals
         ├── svm_coefficients.ipynb          | Notebook for SVM coefficients analysis
         └── word_importance.ipynb           | Notebook for word importance analysis
