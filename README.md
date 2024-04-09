@@ -4,7 +4,7 @@ Source code of the Master's Thesis in Computer Science at the Friedrich-Alexande
 
 Author: Marcel Hiltner
 
-Note: Due to the storage space, all trained or fine-tuned models and the data set are stored on kaggle. However, these can be loaded via the kaggle API, as implemented in the code.
+Note: Due to the storage space, all trained or fine-tuned models and the dataset are stored on kaggle. However, these can be loaded via the kaggle API, as implemented in the code.
 
 ## Table of contents
 
