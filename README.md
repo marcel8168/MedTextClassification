@@ -4,7 +4,7 @@ Source code of the Master's Thesis in Computer Science at the Friedrich-Alexande
 
 Author: Marcel Hiltner
 
-Note: Due to the memory size, all trained or fine-tuned models and the data set are stored on kaggle. However, these can be loaded via the kaggle API, as implemented in the code.
+Note: Due to the storage space, all trained or fine-tuned models and the data set are stored on kaggle. However, these can be loaded via the kaggle API, as implemented in the code.
 
 ## Table of contents
 
@@ -15,11 +15,11 @@ Note: Due to the memory size, all trained or fine-tuned models and the data set 
 
 ## Repository Structure
 <pre>
-├── Source_code                             | Folder for the source code
-    ├── a_problem_analysis                  | Folder for problem analysis notebooks
+├── Source_code                             | <b>Folder for the source code</b>
+    ├── <b>a_problem_analysis</b>                  | <b>Folder for problem analysis</b>
         ├── analysis_pmc_patients.ipynb     | Notebook analyzing PMC patients data
         └── problem_analysis.ipynb          | Notebook for general problem analysis
-    ├── b_dataset_generation                | Folder for dataset generation
+    ├── <b>b_dataset_generation</b>                | <b>Folder for dataset generation</b>
         ├── data                            | Folder containing data queried from PubMed
         │   ├── human_medical_data          | Folder for human medical data
         │   │   ├── BMJ_data.xml            | XML file for for texts of journal BMJ
@@ -37,19 +37,19 @@ Note: Due to the memory size, all trained or fine-tuned models and the data set 
         │   ├── query.py                    | Python script for PubMed queries
         │   └── requirements.txt            | Requirements file for PubMed setup
         └── dataset_generation.ipynb        | Notebook for dataset generation
-    ├── c_model_training_fine_tuning        | Folder for model training and fine-tuning
+    ├── <b>c_model_training_fine_tuning</b>        | <b>Folder for model training and fine-tuning</b>
         ├── plm_fine_tuning.ipynb           | Notebook for PLM fine-tuning
         └── svm_training.ipynb              | Notebook for SVM training
-    ├── d_model_testing                     | Folder for model testing
+    ├── <b>d_model_testing</b>                     | <b>Folder for model testing</b>
         ├── plm_testing.ipynb               | Notebook for PLM testing
         └── svm_testing.ipynb               | Notebook for SVM testing
-    ├── e_model_interpretation              | Folder for model interpretation
+    ├── <b>e_model_interpretation</b>              | <b>Folder for model interpretation</b>
         ├── rare_animals.ipynb              | Notebook for analysis of texts containing rare animals
         ├── svm_coefficients.ipynb          | Notebook for SVM coefficients analysis
         └── word_importance.ipynb           | Notebook for word importance analysis
-    ├── f_others                            | Folder for other analyses
+    ├── <b>f_others</b>                            | <b>Folder for other analyses</b>
         └── hardware_analysis.ipynb         | Notebook for hardware analysis
-    └── z_utils                             | Folder for utility scripts and classes
+    └── <b>z_utils</b>                             | <b>Folder for utility scripts and classes</b>
         ├── BERTClassifier.py               | Python script for BERT classifier
         ├── BlueBERTClassifier.py           | Python script for BlueBERT classifier
         ├── data_preparing.py               | Python script for data preparation
