@@ -114,4 +114,4 @@ SET KAGGLE_KEY=xxxxxxxxxxxxxx
 | Dataset | [Link](https://www.kaggle.com/datasets/marcelhiltner/pubmed-human-veterinary-medicine-classification) |
 
 ## License
-[MIT License](LICENSE) (Marcel Hiltner, 2023)
+[MIT License](LICENSE) (Marcel Hiltner, 2024)
