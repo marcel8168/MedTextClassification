@@ -1,8 +1,7 @@
 # Classification of veterinary subjects in medical literature and clinical summaries
 
-Source code of the Master's Thesis in Computer Science at the Friedrich-Alexander-University (FAU).
+Source code of the publication: [Classification of Veterinary Subjects in Medical Literature and Clinical Summaries](https://doi.org/10.3233/shti240858)
 
-Author: Marcel Hiltner
 
 Note: Due to the storage space, all trained or fine-tuned models and the dataset are stored on kaggle. However, these can be loaded via the kaggle API, as implemented in the code.
 
@@ -10,7 +9,7 @@ Note: Due to the storage space, all trained or fine-tuned models and the dataset
 
 * [Repository Structure](#repository-structure)
 * [Installation](#installation)
-* [Links to models and dataset](#further-links)
+* [Links to models](#further-links)
 * [License](#license)
 
 ## Repository Structure
@@ -111,7 +110,6 @@ SET KAGGLE_KEY=xxxxxxxxxxxxxx
 | BlueBERT Model | [Link](https://www.kaggle.com/models/marcelhiltner/bluebert-large-pubmed) |
 | XLNet Model | [Link](https://www.kaggle.com/models/marcelhiltner/xlnet-large-pubmed) |
 | SVM Model | [Link](https://www.kaggle.com/models/marcelhiltner/svm-linear-pubmed) |
-| Dataset | [Link](https://www.kaggle.com/datasets/marcelhiltner/pubmed-human-veterinary-medicine-classification) |
 
 ## License
 [MIT License](LICENSE) (Marcel Hiltner, 2024)
